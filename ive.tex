@@ -1,0 +1,210 @@
+\documentclass[aspectratio=1610,xcolor=dvipsnames,t]{beamer} 
+
+\usepackage{listings} 
+\usepackage{color} 
+\usepackage{xcolor}  
+\usepackage{microtype} 
+\usepackage{helvet} 
+\usepackage{inconsolata} 
+\usepackage[framemethod=TikZ]{mdframed} 
+\usepackage{graphicx} 
+\usepackage{alltt}
+\usepackage{sverb} 
+\usepackage{verbatim} 
+\usepackage{pifont} 
+\usepackage{helvet} 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usetheme{Madrid} 
+\useinnertheme{rectangles} 
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[default] 
+
+%\definecolor{mypurple}{rgb}{.49,0,98}
+%\setbeamercolor*{palette primary}{use=structure,fg=white,bg=green}
+%\usecolortheme[rgb={0.9,0.2,0.2}]{structure}
+%\usecolortheme[rgb={0.6,0.1,0.1}]{structure}
+
+%\usecolortheme[rgb={0.2, 0.2, 0.8}]{structure} 
+%\usecolortheme[rgb={0.0, 0.0, 0.8}]{structure} 
+\usecolortheme[rgb={0.2, 0.2, 0.3}]{structure} 
+
+\usepackage{color}
+\definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+\definecolor{darkorange}{rgb}{.71,0.21,0.01}
+\definecolor{darkgreen}{rgb}{.12,.54,.11}
+\definecolor{myteal}{rgb}{.26, .44, .56}
+\definecolor{gray}{gray}{0.45}
+\definecolor{lightgray}{gray}{.95}
+\definecolor{mediumgray}{gray}{.8}
+\definecolor{inputbackground}{rgb}{.95, .95, .85}
+\definecolor{outputbackground}{rgb}{.95, .95, .95}
+\definecolor{traceback}{rgb}{1, .95, .95}
+\definecolor{inputbg}{rgb}{0.98, 0.98, 0.98}
+
+\usepackage{listings} 
+\lstset{language=bash,
+        %basicstyle=\footnotesize\ttfamily, 
+        basicstyle=\small\ttfamily,
+        columns=fullflexible, 
+        %title=\lstname, 
+        %numbers=left, stringstyle=\texttt, 
+        %numberstyle={\tiny\texttt}, 
+        keywordstyle=\color{blue}, 
+        commentstyle=\color{darkgreen}, 
+        stringstyle=\color{purple} } 
+
+
+\mdfsetup{skipabove=\topskip, skipbelow=\topskip} 
+
+\definecolor{codebg}{rgb}{0.99,0.99,0.99}
+
+\global\mdfdefinestyle{code}{%
+    frametitlerule=true,%
+    frametitlefont=\small\bfseries\ttfamily,%
+    frametitlebackgroundcolor=lightgray,%
+    backgroundcolor=codebg,%
+    linecolor=gray, linewidth=0.5pt,%
+    leftmargin=0.5cm, rightmargin=0.5cm,%
+    roundcorner=2pt,%
+    innerleftmargin=5pt
+}
+
+\global\mdfdefinestyle{code2}{%
+    topline=false,%
+    bottomline=false,%
+    leftline=true,%
+    rightline=false,%
+    backgroundcolor=codebg,%
+    linecolor=gray, linewidth=0.5pt,%
+    leftmargin=0.0cm, rightmargin=0.0cm,%
+    innerleftmargin=1pt
+}
+
+\newcommand{\showcode}[1]{\begin{mdframed}[style=code] %
+                            \lstinputlisting{#1}% 
+                          \end{mdframed}% 
+}
+
+
+\title[Intelligent Virtual Environments]{Intelligent Virtual Environments for Agents} 
+\subtitle{2002 Australian Cognitive Science Conference} 
+\author[Michael Papasimeon]{Michael Papasimeon} 
+\date[OZCOGSCI 2002]{25 September 2002\\ Fremantle, Western Australia} 
+
+\begin{document}
+
+\begin{frame}
+    \maketitle
+\end{frame} 
+
+\begin{frame}{Overall Aim and Hypothesis} 
+    \begin{block}{Aim}
+        To allow agents to participate in a richer, more complex and more
+        intelligent way in their environment in the framework of an explainable
+        and plausible cognitive model. 
+    \end{block}
+    \begin{block}{Hypothesis}
+        \begin{itemize}
+            \item Current agents are limited by their environmental
+                  interaction.
+            \item We can attempt to change this by improving the way
+                  in which agents interact with their environment.
+        \end{itemize}
+    \end{block} 
+    \begin{exampleblock}{Herb Simon (1969)} 
+        \begin{quote}
+            "Complexity of an ant's behaviour walking along a beach
+            has more to do with the complexity of the environment
+            rather than an inherent internal complexity of the 
+            ant itself."
+        \end{quote}
+    \end{exampleblock} 
+\end{frame} 
+
+\begin{frame}{Definitions: Agent} 
+    \begin{block}{Russell and Norvig \emph{Artificial Intellligence -- pg 31, 1995}}
+        \begin{quote}
+            "An agent is anything that can be viewed as perceiving its 
+            \textbf{environment} through sensors and acting upon that
+            \textbf{environment} through effectors."
+        \end{quote}
+    \end{block} 
+
+    \begin{block}{d'Inverno and Luck \emph{Understanding Agent Systems -- pg 2, 2001}}
+        \begin{quote}
+            "... agents have been proposed as \textbf{situated} and 
+            \textbf{embedded} problem solvers that are capable of functioning
+            effectively and efficiently in a complex \textbf{environment}."
+         \end{quote} 
+    \end{block} 
+
+    \begin{block}{Wooldrdige \emph{Multiagent Systems - pg 29, 1999 - editor G. Weiss}}
+        \begin{quote}
+            "An agent is a computer system that is \textbf{situated} in some
+            \textbf{environment} and that is capable of autonomous 
+            \textbf{action} in this environment in order to meet its
+            design objectives."
+        \end{quote}
+    \end{block} 
+
+\end{frame} 
+
+\begin{frame}{Definition: Environment}
+\end{frame} 
+
+\begin{frame}{Requirement for Virtual Environments} 
+\end{frame} 
+
+\begin{frame}{Definition: Intelligent}
+\end{frame} 
+
+\begin{frame}{Designing Intelligent Information Systems} 
+\end{frame}
+
+\begin{frame}{Real Environments: Augmentation} 
+\end{frame} 
+
+\begin{frame}{Classical AI vs Situated Cognition}
+\end{frame} 
+
+\begin{frame}{Virtual Environments}
+\end{frame}
+
+\begin{frame}{Motor Racing Simulation: The Scenario}
+\end{frame} 
+
+\begin{frame}{Environmental Representation Options} 
+\end{frame} 
+
+\begin{frame}{Intelligent Agent: Low Level Perception}
+\end{frame} 
+
+\begin{frame}{An Environment Labelled for an Agent}
+\end{frame} 
+
+\begin{frame}{Driver Agent: Rounding a Corner}
+\end{frame} 
+
+\begin{frame}{Labels, Names, Categories and Plans}
+\end{frame} 
+
+\begin{frame}{Environmental Labelling by Category} 
+\end{frame}
+
+\begin{frame}{Relationships in the Environment}
+\end{frame}
+
+\begin{frame}{Affordances in Crazy Taxi} 
+\end{frame} 
+
+\begin{frame}{An Environment Labelled for an Agent} 
+\end{frame} 
+
+\begin{frame}{Summary}
+\end{frame} 
+
+
+\end{document}
