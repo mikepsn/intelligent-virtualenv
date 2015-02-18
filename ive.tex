@@ -153,30 +153,120 @@
 \end{frame} 
 
 \begin{frame}{Definition: Environment}
+    \begin{itemize}
+        \item Agents can be situated in different types
+              of environments:
+              \begin{itemize}
+                    \item Real
+                    \item Virtual
+              \end{itemize}
+        \item We are interested in synthetic (spatial and temporal)
+              environments that are representations of real
+              or fictional worlds:
+                \begin{itemize}
+                    \item Simulations
+                    \item Interactive Entertainment
+                \end{itemize}
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{Requirement for Virtual Environments} 
 \end{frame} 
 
 \begin{frame}{Definition: Intelligent}
+    \begin{itemize}
+        \item ...as in Artificial Intelligence.
+        \item Including perception, reasoning and action.
+        \item Components of a software system that contains "smarts":
+            \begin{itemize}
+                \item Components which use traditional AI algorithms
+                \item Components which are models of human cognitive 
+                      processes.
+            \end{itemize}
+        \item Research in multi-agent systems suggest that these
+              types of processes belong in the agent. 
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{Designing Intelligent Information Systems} 
+    \begin{itemize}
+        \item Limited representation of the environment in classical
+              artificial intelligence.
+        \item Then agents came along... agent could live in,
+              perceive, reason and act in their environment.
+        \item Many agents became quite large and heavyweight and
+              exhibit properties of classical AI systems.
+        \item "Intelligence" belongs in the agent?
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Real Environments: Augmentation} 
+    Augmenting real environments for a purpose
+    \begin{itemize}
+        \item Head Up Displays and Helmet Mounted Sights
+        \item The Road and Traffic System
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{Classical AI vs Situated Cognition}
+    \begin{block}{Classical AI vs Situated Cognition}
+    \begin{center}
+    \begin{tabular}{cc} \hline
+        \textbf{Classical View of Mind}  &   \textbf{Situated Cognition} \\ \hline
+            Individual              &   Social \\
+            Rational                &   Embodied \\
+            Abstract                &   Concrete \\
+            Detached                &   Located \\
+            General                 &   Specific \\ \hline
+    \end{tabular} 
+    \end{center} 
+    \end{block} 
+
+    It is claimed that agents are situated given that they
+    can perceive and act in an environment. However:
+    \begin{itemize}
+        \item Most agent designs don't have the characteristics
+            espoused by the situated cognition community.
+        \item Most agent designs ignore the environment and are
+            detached (reasoning is separate from perception and action).
+    \end{itemize}
+            
+
 \end{frame} 
 
-\begin{frame}{Virtual Environments}
+\begin{frame}{Ideas for Designing Virtual Environments}
+    \begin{itemize}
+        \item Situated Cognition (Clancy, Suchman)
+        \item Cognitve Systems (Hutchence) -- Boeing 747 Example
+        \item Ecological Psychology (Gibson) -- Affordances
+        \item Labelling of Entities in the Environment by:
+            \begin{itemize}
+                \item Name, Category
+                \item Affordance
+                \item Relationships
+                \item Purpose or Intention of Agens
+            \end{itemize}
+    \end{itemize}
+    
+    Consider a motor racing simulation/game...
 \end{frame}
 
 \begin{frame}{Motor Racing Simulation: The Scenario}
 \end{frame} 
 
 \begin{frame}{Environmental Representation Options} 
+    \begin{itemize}
+        \item Agent driving a virtual car around a virtual racing track...
+        \item The environment consists of a track, other cars,
+              obstacles, team-mates, marshals, the pits, pit-crew,
+              team-boss, spectators.
+        \item What our virtual environment representation options?
+            \begin{itemize}
+                \item Intelligent Agents
+                \item Intelligent Environments
+                \item "Intelligence" is shared between agents and environments.
+            \end{itemize}
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{Intelligent Agent: Low Level Perception}
@@ -189,21 +279,75 @@
 \end{frame} 
 
 \begin{frame}{Labels, Names, Categories and Plans}
+    \begin{itemize}
+        \item We can label things in different ways.
+            \begin{itemize}
+                \item As cars, roads, buildings, traffic lights.
+                \item As opponents, pedestrians and other drivers, 
+                      or everything is an obstacle to the 
+                      agent winning!
+            \end{itemize}
+        \item Parts of the environment can be labelled. 
+              For example, consider labelling a corner:
+              \begin{itemize}
+                    \item As a left/right tight turn
+                    \item With prescription: \emph{"Take this corner
+                            at 60-75 km/h, in 3rd gear in a gentle
+                        left hand turn."} 
+              \end{itemize}
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{Environmental Labelling by Category} 
 \end{frame}
 
 \begin{frame}{Relationships in the Environment}
+    \begin{itemize}
+        \item Can the agent driver query the environmnet about 
+              relationships?
+              \begin{itemize}
+                \item \emph{"Who is in front of me?"}
+                \item \emph{"Who is behind me?"} 
+              \end{itemize}
+        \item How about more complex relationships that are dynamic?
+            \begin{itemize}
+                \item \emph{"Do I have an overtaking opportunity?"}
+            \end{itemize}
+        \item Relationships between team members.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Affordances in Crazy Taxi} 
+    \begin{itemize}
+        \item Premise is to pickup fare paying passengers.
+        \item The quickest route to the destination, the more
+              money the passenger will pay.
+        \item Passengers tip extra for crazy stunts and tricks.
+        \item Certain buildings afford picking up passengers.
+        \item Objects in the the city afford doing stunts 
+              (like ramps for jumps).
+        \item Different road surfaces afford going faster.
+        \item All sorts of things afford being a short-cut.
+    \end{itemize}
 \end{frame} 
 
 \begin{frame}{An Environment Labelled for an Agent} 
 \end{frame} 
 
 \begin{frame}{Summary}
+    \begin{itemize}
+        \item Agent interactions with the environment aren't
+              as interesting or complicated as they could be.
+        \item Virtual environments and agents can be designed
+              (unlike real environments).
+        \item Exploring the "agent-environment" interface allows
+              us to investigate alternative ways of intelligent
+              agents in virtual environments.
+        \item We can use ideas from cognitive science to  
+              ground our designs in theory of situated cognition.
+        \item This will help us build environments in which agents
+              and humans can interact. 
+    \end{itemize}
 \end{frame} 
 
 
